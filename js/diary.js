@@ -1,10 +1,10 @@
-const emotionEmojis = {
-    happy: "😊",
-    calm: "😌",
-    tired: "😫",
-    anxious: "😰",
-    wronged: "😢",
-    angry: "😠"
+const emotionImgSrc = {
+    happy: "../image/happy.png",
+    calm: "../image/calm.png",
+    tired: "../image/tired.png",
+    anxious: "../image/anxious.png",
+    wronged: "../image/wronged.png",
+    angry: "../image/angry.png"
 };
 const emotionScores = {
     happy: 5,
@@ -65,19 +65,19 @@ function renderCalendar(year, month) {
     }
 
     // 当前月日期
-    for (let day = 1; day <= daysInMonth; day++) {
-        const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
-        const diary = diaryData[dateStr];
-        const emoji = diary ? emotionEmojis[diary.emotion] : "";
-        const isToday = dateStr === getTodayStr();
+for (let day = 1; day <= daysInMonth; day++) {
+    const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+    const diary = diaryData[dateStr];
+    const imgUrl = diary ? emotionImgSrc[diary.emotion] : "";
+    const isToday = dateStr === getTodayStr();
 
-        html += `
-            <div class="day-cell ${isToday ? 'today' : ''}" data-date="${dateStr}">
-                <span class="day-number">${day}</span>
-                ${emoji ? `<span class="day-emoji">${emoji}</span>` : ""}
-            </div>
-        `;
-    }
+    html += `
+        <div class="day-cell ${isToday ? 'today' : ''}" data-date="${dateStr}">
+            <span class="day-number">${day}</span>
+            ${imgUrl ? `<img class="day-emoji-img" src="${imgUrl}" alt="情绪图标">` : ""}
+        </div>
+    `;
+}
 
     // 下个月日期
     const totalCells = Math.ceil((firstDay + daysInMonth) / 7) * 7;

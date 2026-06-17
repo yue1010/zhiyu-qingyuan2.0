@@ -293,13 +293,13 @@ body {
     line-height:1.6;
 }
 .section-title{
-    font-weight:bold;color:#24573f;margin:10px 0 4px;
+    font-weight:bold;color:#1b5e32;margin:10px 0 4px;
 }
 .item{
     display:flex;margin-bottom:5px;
 }
 .dot{
-    color:#22c55e;margin-right:5px;
+    color:#42b983;margin-right:5px;
 }
 .footer-desc{
     margin-top:15px;font-size:10px;color:#888;text-align:center;

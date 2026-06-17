@@ -85,7 +85,7 @@ tourBtn.onclick = function(){
     location.href = "music.html";
 }
 
-//获取验证码
+//获取验证码 → 自动填入 000000 + 倒计时
 getCodeBtn.onclick = function(){
     if(!isAgree){
         alert("请先阅读并同意隐私政策");
@@ -96,6 +96,11 @@ getCodeBtn.onclick = function(){
         alert('请输入11位手机号码');
         return;
     }
+
+    // 核心：自动填充验证码为 000000
+    codeInp.value = "000000";
+
+    // 60秒倒计时
     let cd = 60;
     let t = setInterval(()=>{
         cd--;
@@ -108,6 +113,7 @@ getCodeBtn.onclick = function(){
         }
     },1000)
 }
+
 
 // ========= 2. 手机号登录：正式登录，写入标识 =========
 submitLogin.onclick = function(){
@@ -125,7 +131,6 @@ submitLogin.onclick = function(){
         alert('验证码错误，测试验证码：000000');
         return;
     }
-    alert('登录成功，跳转APP首页');
     mask.style.display = 'none';
     popBox.classList.remove('pop-show');
     // 正式登录：写入登录标记
