@@ -22,16 +22,14 @@ let count = 5;
 let isAgree = false; //全局标记是否同意隐私
 
 //页面加载自动弹出隐私弹窗
-document.addEventListener('DOMContentLoaded', function(){
-    countDownTimer = setInterval(()=>{
-        count--;
-        countNum.innerText = count;
-        if(count <= 0){
-            clearInterval(countDownTimer);
-            privacyCheck.disabled = false;
-        }
-    },1000)
-})
+countDownTimer = setInterval(()=>{
+    count--;
+    countNum.innerText = count;
+    if(count <= 0){
+        clearInterval(countDownTimer);
+        privacyCheck.disabled = false;
+    }
+},1000)
 
 //勾选协议后解锁确认按钮
 privacyCheck.onchange = function(){
