@@ -29,24 +29,24 @@ const songLists = {
             artist: "By: Yiruma", 
             tag: "释放愤怒", 
             cover: "linear-gradient(135deg, #ff6b6b 0%, #ff8fab 50%, #ff6b6b 100%)",
-            coverImg: "../image/3.jpg",
-            audioSrc: "../audio/Release_Anger.mp3"
+            coverImg: "https://yue1010.github.io/zhiyu-qingyuan2.0/image/3.jpg",
+            audioSrc: "https://yue1010.github.io/zhiyu-qingyuan2.0/audio/Release_Anger.mp3"
         },
         { 
             title: "River Flows In You", 
             artist: "钢琴版", 
             tag: "愤怒舒缓", 
             cover: "linear-gradient(135deg, #ff9999 0%, #cc0000 50%, #ff9999 100%)",
-            coverImg: "../image/6.jpg",
-            audioSrc: "../audio/calm_down.mp3"
+            coverImg: "https://yue1010.github.io/zhiyu-qingyuan2.0/image/6.jpg",
+            audioSrc: "https://yue1010.github.io/zhiyu-qingyuan2.0/audio/calm_down.mp3"
         },
         { 
             title: "卡农（钢琴版）", 
             artist: "By: 文武贝", 
             tag: "情绪平复", 
             cover: "linear-gradient(135deg, #ffcccc 0%, #ff3333 50%, #ffcccc 100%)",
-            coverImg: "../image/2.jpg",
-            audioSrc: "../audio/peace_mind.mp3"
+            coverImg: "https://yue1010.github.io/zhiyu-qingyuan2.0/image/2.jpg",
+            audioSrc: "https://yue1010.github.io/zhiyu-qingyuan2.0/audio/peace_mind.mp3"
         }
     ],
     anxiety: [
@@ -55,24 +55,24 @@ const songLists = {
             artist: "By: Various Artists&Kachina", 
             tag: "缓解焦虑", 
             cover: "linear-gradient(135deg, #fff8d9 0%, #cc8822 50%, #fff8d9 100%)",
-            coverImg: "../image/6.jpg",
-            audioSrc: "../audio/anxiety_relief.mp3"
+            coverImg: "https://yue1010.github.io/zhiyu-qingyuan2.0/image/6.jpg",
+            audioSrc: "https://yue1010.github.io/zhiyu-qingyuan2.0/audio/anxiety_relief.mp3"
         },
         { 
             title: "三亩地", 
             artist: "By: 城南花已开", 
             tag: "放松神经", 
             cover: "linear-gradient(135deg, #fff2cc 0%, #ffbb33 50%, #fff2cc 100%)",
-            coverImg: "../image/4.jpg",
-            audioSrc: "../audio/stress_away.mp3"
+            coverImg: "https://yue1010.github.io/zhiyu-qingyuan2.0/image/4.jpg",
+            audioSrc: "https://yue1010.github.io/zhiyu-qingyuan2.0/audio/stress_away.mp3"
         },
         { 
             title: "故乡的原风景", 
             artist: "By: 宗次郎", 
             tag: "思绪清明", 
             cover: "linear-gradient(135deg, #fff9e6 0%, #ffcc66 50%, #fff9e6 100%)",
-            coverImg: "../image/7.jpg",
-            audioSrc: "../audio/clear_thoughts.mp3"
+            coverImg: "https://yue1010.github.io/zhiyu-qingyuan2.0/image/7.jpg",
+            audioSrc: "https://yue1010.github.io/zhiyu-qingyuan2.0/audio/clear_thoughts.mp3"
         }
     ],
     sad: [
@@ -81,24 +81,24 @@ const songLists = {
             artist: "By: Pianoboy高至豪", 
             tag: "委屈治愈", 
             cover: "linear-gradient(135deg, #e8f4ff 0%, #3377cc 50%, #e8f4ff 100%)",
-            coverImg: "../image/2.jpg",
-            audioSrc: "../audio/sad_heal.mp3"
+            coverImg: "https://yue1010.github.io/zhiyu-qingyuan2.0/image/2.jpg",
+            audioSrc: "https://yue1010.github.io/zhiyu-qingyuan2.0/audio/sad_heal.mp3"
         },
         { 
             title: "Childhood Memory", 
             artist: "By: Bandari", 
             tag: "情绪释放", 
             cover: "linear-gradient(135deg, #d9e8ff 0%, #4488dd 50%, #d9e8ff 100%)",
-            coverImg: "../image/9.jpg",
-            audioSrc: "../audio/let_it_go.mp3"
+            coverImg: "https://yue1010.github.io/zhiyu-qingyuan2.0/image/9.jpg",
+            audioSrc: "https://yue1010.github.io/zhiyu-qingyuan2.0/audio/let_it_go.mp3"
         },
         { 
             title: "Eutopia", 
             artist: "By: Yoohsic Roomz", 
             tag: "温柔抚慰", 
             cover: "linear-gradient(135deg, #cce0ff 0%, #5599ee 50%, #cce0ff 100%)",
-            coverImg: "../image/1.jpg",
-            audioSrc: "../audio/warm_embrace.mp3"
+            coverImg: "https://yue1010.github.io/zhiyu-qingyuan2.0/image/1.jpg",
+            audioSrc: "https://yue1010.github.io/zhiyu-qingyuan2.0/audio/warm_embrace.mp3"
         }
     ],
     defeat: [
@@ -107,24 +107,24 @@ const songLists = {
             artist: "By: Maximilian", 
             tag: "重拾信心", 
             cover: "linear-gradient(135deg, #f0f7f0 0%, #556666 50%, #f0f7f0 100%)",
-            coverImg: "../image/6.jpg",
-            audioSrc: "../audio/rebuild_hope.mp3"
+            coverImg: "https://yue1010.github.io/zhiyu-qingyuan2.0/image/6.jpg",
+            audioSrc: "https://yue1010.github.io/zhiyu-qingyuan2.0/audio/rebuild_hope.mp3"
         },
         { 
             title: "菊次郎的夏天", 
             artist: "By: 久石让", 
             tag: "整装再发", 
             cover: "linear-gradient(135deg, #e6efeb 0%, #667777 50%, #e6efeb 100%)",
-            coverImg: "../image/3.jpg",
-            audioSrc: "../audio/new_start.mp3"
+            coverImg: "https://yue1010.github.io/zhiyu-qingyuan2.0/image/3.jpg",
+            audioSrc: "https://yue1010.github.io/zhiyu-qingyuan2.0/audio/new_start.mp3"
         },
         { 
             title: "City Of Stars", 
             artist: "By: Ryan Gosling", 
             tag: "稳步前行", 
             cover: "linear-gradient(135deg, #e0ebe5 0%, #778888 50%, #e0ebe5 100%)",
-            coverImg: "../image/4.jpg",
-            audioSrc: "../audio/step_forward.mp3"
+            coverImg: "https://yue1010.github.io/zhiyu-qingyuan2.0/image/4.jpg",
+            audioSrc: "https://yue1010.github.io/zhiyu-qingyuan2.0/audio/step_forward.mp3"
         }
     ],
     calm: [
@@ -133,24 +133,24 @@ const songLists = {
             artist: "By: 周深", 
             tag: "内心平静", 
             cover: "linear-gradient(135deg, #e8f7e8 0%, #2d884a 50%, #e8f7e8 100%)",
-            coverImg: "../image/4.jpg",
-            audioSrc: "../audio/inner_peace.mp3"
+            coverImg: "https://yue1010.github.io/zhiyu-qingyuan2.0/image/4.jpg",
+            audioSrc: "https://yue1010.github.io/zhiyu-qingyuan2.0/audio/inner_peace.mp3"
         },
         { 
             title: "贝加尔湖畔", 
             artist: "By: 李健", 
             tag: "心如止水", 
             cover: "linear-gradient(135deg, #dcf0dc 0%, #339955 50%, #dcf0dc 100%)",
-            coverImg: "../image/7.jpg",
-            audioSrc: "../audio/still_water.mp3"
+            coverImg: "https://yue1010.github.io/zhiyu-qingyuan2.0/image/7.jpg",
+            audioSrc: "https://yue1010.github.io/zhiyu-qingyuan2.0/audio/still_water.mp3"
         },
         { 
             title: "这世界那么多人", 
             artist: "By: 莫文蔚", 
             tag: "宁静致远", 
             cover: "linear-gradient(135deg, #d0e8d0 0%, #44aa66 50%, #d0e8d0 100%)",
-            coverImg: "../image/5.jpg",
-            audioSrc: "../audio/tranquil_mind.mp3"
+            coverImg: "https://yue1010.github.io/zhiyu-qingyuan2.0/image/5.jpg",
+            audioSrc: "https://yue1010.github.io/zhiyu-qingyuan2.0/audio/tranquil_mind.mp3"
         }
     ],
     relax: [
@@ -159,24 +159,24 @@ const songLists = {
             artist: "By: 陈奕迅", 
             tag: "深度放松", 
             cover: "linear-gradient(135deg, #f0f5f5 0%, #2288cc 50%, #f0f5f5 100%)",
-            coverImg: "../image/5.jpg",
-            audioSrc: "../audio/deep_relax.mp3"
+            coverImg: "https://yue1010.github.io/zhiyu-qingyuan2.0/image/5.jpg",
+            audioSrc: "https://yue1010.github.io/zhiyu-qingyuan2.0/audio/deep_relax.mp3"
         },
         { 
             title: "菊次郎的夏天", 
             artist: "By: 久石让", 
             tag: "身心舒缓", 
             cover: "linear-gradient(135deg, #e6f0f5 0%, #3399dd 50%, #e6f0f5 100%)",
-            coverImg: "../image/8.jpg",
-            audioSrc: "../audio/body_soul.mp3"
+            coverImg: "https://yue1010.github.io/zhiyu-qingyuan2.0/image/8.jpg",
+            audioSrc: "https://yue1010.github.io/zhiyu-qingyuan2.0/audio/body_soul.mp3"
         },
         { 
             title: "天空之城", 
             artist: "By: 宫崎骏", 
             tag: "轻松一刻", 
             cover: "linear-gradient(135deg, #dceaf5 0%, #44aadd 50%, #dceaf5 100%)",
-            coverImg: "../image/7.jpg",
-            audioSrc: "../audio/light_easy.mp3"
+            coverImg: "https://yue1010.github.io/zhiyu-qingyuan2.0/image/7.jpg",
+            audioSrc: "https://yue1010.github.io/zhiyu-qingyuan2.0/audio/light_easy.mp3"
         }
     ],
     heal: [
@@ -185,24 +185,24 @@ const songLists = {
             artist: "By: Kyle Xian", 
             tag: "灵魂治愈", 
             cover: "linear-gradient(135deg, #eaf9ef 0%, #229977 50%, #eaf9ef 100%)",
-            coverImg: "../image/1.jpg",
-            audioSrc: "../audio/soul_heal.mp3"
+            coverImg: "https://yue1010.github.io/zhiyu-qingyuan2.0/image/1.jpg",
+            audioSrc: "https://yue1010.github.io/zhiyu-qingyuan2.0/audio/soul_heal.mp3"
         },
         { 
             title: "路过人间", 
             artist: "By: 郁可唯", 
             tag: "内心之光", 
             cover: "linear-gradient(135deg, #dcf7e4 0%, #33aa88 50%, #dcf7e4 100%)",
-            coverImg: "../image/9.jpg",
-            audioSrc: "../audio/light_within.mp3"
+            coverImg: "https://yue1010.github.io/zhiyu-qingyuan2.0/image/9.jpg",
+            audioSrc: "https://yue1010.github.io/zhiyu-qingyuan2.0/audio/light_within.mp3"
         },
         { 
             title: "Lemon", 
             artist: "By: 米津玄师", 
             tag: "温柔疗愈", 
             cover: "linear-gradient(135deg, #d0f2dd 0%, #44bb99 50%, #d0f2dd 100%)",
-            coverImg: "../image/8.jpg",
-            audioSrc: "../audio/heart_mender.mp3"
+            coverImg: "https://yue1010.github.io/zhiyu-qingyuan2.0/image/8.jpg",
+            audioSrc: "https://yue1010.github.io/zhiyu-qingyuan2.0/audio/heart_mender.mp3"
         }
     ],
     peace: [
@@ -211,24 +211,24 @@ const songLists = {
             artist: "By: 坂本龍一", 
             tag: "全然安心", 
             cover: "linear-gradient(135deg, #f5f5f5 0%, #8855aa 50%, #f5f5f5 100%)",
-            coverImg: "../image/7.jpg",
-            audioSrc: "../audio/total_peace.mp3"
+            coverImg: "https://yue1010.github.io/zhiyu-qingyuan2.0/image/7.jpg",
+            audioSrc: "https://yue1010.github.io/zhiyu-qingyuan2.0/audio/total_peace.mp3"
         },
         { 
             title: "同桌的你", 
             artist: "By: 老狼", 
             tag: "安心港湾", 
             cover: "linear-gradient(135deg, #ebe6f0 0%, #9966bb 50%, #ebe6f0 100%)",
-            coverImg: "../image/5.jpg",
-            audioSrc: "../audio/safe_sound.mp3"
+            coverImg: "https://yue1010.github.io/zhiyu-qingyuan2.0/image/5.jpg",
+            audioSrc: "https://yue1010.github.io/zhiyu-qingyuan2.0/audio/safe_sound.mp3"
         },
         { 
             title: "星星失眠", 
             artist: "By: 哈利Halleeee", 
             tag: "无忧时刻", 
             cover: "linear-gradient(135deg, #e6e0eb 0%, #aa77cc 50%, #e6e0eb 100%)",
-            coverImg: "../image/1.jpg",
-            audioSrc: "../audio/no_worries.mp3"
+            coverImg: "https://yue1010.github.io/zhiyu-qingyuan2.0/image/1.jpg",
+            audioSrc: "https://yue1010.github.io/zhiyu-qingyuan2.0/audio/no_worries.mp3"
         }
     ],
     default: [
@@ -237,8 +237,8 @@ const songLists = {
             artist: "By: Sarah Wins", 
             tag: "治愈系", 
             cover: "linear-gradient(135deg, #ffccd5 0%, #ff8fab 50%, #ffc2e2 100%)",
-            coverImg: "../image/2.jpg",
-            audioSrc: "../audio/rain.mp3"
+            coverImg: "https://yue1010.github.io/zhiyu-qingyuan2.0/image/2.jpg",
+            audioSrc: "https://yue1010.github.io/zhiyu-qingyuan2.0/audio/rain.mp3"
         }
     ]
 };
