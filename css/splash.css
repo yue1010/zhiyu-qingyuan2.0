@@ -18,7 +18,7 @@ body {
     border-radius: 48px;
     position: relative;
     overflow: hidden;
-    background: url("https://yue1010.github.io/zhiyu-qingyuan2.0/image/background.jpg") no-repeat center center;
+    background: url("./image/background.jpg") no-repeat center center;
     background-size: cover;
     background-position: center;
 }
