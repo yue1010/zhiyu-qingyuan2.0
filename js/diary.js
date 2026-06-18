@@ -1,10 +1,10 @@
 const emotionImgSrc = {
-    happy: "../image/happy.png",
-    calm: "../image/calm.png",
-    tired: "../image/tired.png",
-    anxious: "../image/anxious.png",
-    wronged: "../image/wronged.png",
-    angry: "../image/angry.png"
+    happy: "https://yue1010.github.io/zhiyu-qingyuan2.0/image/happy.png",
+    calm: "https://yue1010.github.io/zhiyu-qingyuan2.0/image/calm.png",
+    tired: "https://yue1010.github.io/zhiyu-qingyuan2.0/image/tired.png",
+    anxious: "https://yue1010.github.io/zhiyu-qingyuan2.0/image/anxious.png",
+    wronged: "https://yue1010.github.io/zhiyu-qingyuan2.0/image/wronged.png",
+    angry: "https://yue1010.github.io/zhiyu-qingyuan2.0/image/angry.png"
 };
 const emotionScores = {
     happy: 5,
