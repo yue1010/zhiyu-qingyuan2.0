@@ -18,8 +18,10 @@ const loginTip = document.getElementById("loginTip");
 const tipClose = document.querySelector(".tip-close");
 const wrap = document.querySelector(".phone-box");
 
-// 全局音频实例（唯一Audio，切换歌曲复用）
+// 全局音频实例，开启预加载与跨域
 let audio = new Audio();
+audio.preload = "auto";
+audio.crossOrigin = "anonymous";
 
 // 歌曲列表
 const songLists = {
@@ -248,6 +250,19 @@ let currentEmotion = 'default';
 let currentSongIndex = 0;
 let isPlaying = false;
 let likedSongs = new Set();
+let progressThrottle = null; // 进度条节流锁
+
+// 预加载所有封面图片，页面打开后台缓存
+function preloadAllCovers() {
+  const allImgs = new Set();
+  Object.values(songLists).forEach(list => {
+    list.forEach(song => allImgs.add(song.coverImg));
+  });
+  allImgs.forEach(src => {
+    const img = new Image();
+    img.src = src;
+  });
+}
 
 // 格式化秒数为 00:00
 function formatTime(seconds) {
@@ -266,16 +281,17 @@ function updateSongInfo() {
     songArtistEl.textContent = currentSong.artist;
     songTagEl.textContent = currentSong.tag;
 
-    // 封面图样式
     coverBgEl.style.backgroundImage = `url(${currentSong.coverImg})`;
     coverBgEl.style.backgroundSize = '108%';
     coverBgEl.style.backgroundPosition = '65% 50%';
     coverBgEl.style.backgroundRepeat = 'no-repeat';
 
-    // 切换音频资源
+    // 清空旧音频缓冲，减少卡顿
+    audio.pause();
+    audio.src = '';
+    audio.load();
     audio.src = currentSong.audioSrc;
 
-    // 收藏爱心
     const songKey = `${currentEmotion}-${currentSongIndex}`;
     if (likedSongs.has(songKey)) {
         likeBtn.classList.add('active');
@@ -352,7 +368,6 @@ cards.forEach(card => {
         resetProgressUI();
         updateSongInfo();
         musicModal.classList.add('active');
-        // 自动播放
         audio.play();
         isPlaying = true;
         playBtn.textContent = '| |';
@@ -371,16 +386,20 @@ closeBtn.addEventListener('click', () => {
     albumCover.classList.remove('playing');
 });
 
-// 音频时间更新：同步进度条UI
+// 音频时间更新：节流限制DOM更新频率
 audio.addEventListener('timeupdate', () => {
+  if (progressThrottle) return;
+  progressThrottle = setTimeout(() => {
     const current = audio.currentTime;
     const total = audio.duration;
     if (!isNaN(total)) {
-        const percent = (current / total) * 100;
-        progressFill.style.width = `${percent}%`;
-        currentTimeEl.textContent = formatTime(current);
-        totalTimeEl.textContent = formatTime(total);
+      const percent = (current / total) * 100;
+      progressFill.style.width = `${percent}%`;
+      currentTimeEl.textContent = formatTime(current);
+      totalTimeEl.textContent = formatTime(total);
     }
+    progressThrottle = null;
+  }, 100);
 });
 
 // 歌曲播放完毕自动切下一首
@@ -394,8 +413,10 @@ prevBtn.addEventListener('click', prevSong);
 nextBtn.addEventListener('click', nextSong);
 likeBtn.addEventListener('click', toggleLike);
 
-// 底部导航激活
+// DOM加载完成：预加载封面 + 底部导航激活
 document.addEventListener('DOMContentLoaded', function() {
+    preloadAllCovers();
+
     const currentPage = window.location.pathname.split('/').pop().replace('.html', '');
     const tabItems = document.querySelectorAll('.tab-item');
     tabItems.forEach(item => {
